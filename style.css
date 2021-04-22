@@ -75,12 +75,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 14px;
 	align-self: center;
 	margin: 0 0 0 40px;
+	transition-duration: 0.3s;
 }
+
 .verh li a{
 	color: #fff;
+	transition-duration: 0.3s
 }
 .verh li a:hover{
-	font-size: 17px;
+	font-size: 18px;
+	text-decoration: underline;
 }
 .head {
 	background-color: #9a9a9a;
@@ -102,7 +106,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	flex-direction: column;
 	justify-content: space-between;
 	height: 390px;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 }
 .levo h1{
 	font-size: 36px;
@@ -120,7 +124,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .button a{
 	border:1px solid #fff;
 	padding: 10px 30px;
-	color: #fff
+	color: #fff;
 }
 .pravo {
 	padding: 0 150px 0 0 ;
@@ -130,6 +134,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	text-transform: capitalize;
 	font-size: 20px;
 	padding: 20px 55px;
+	width: 360px;
 	font-weight: bolder;
 }
 .try span{
@@ -220,7 +225,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-top: 1px;
 	padding-top: 50px;
 	padding-left: 34px;
-	border-radius: 5px
+	border-radius: 5px;
+	transition-duration: 0.5s;
 }
 .tab:hover{
 	background-color: #ff8b38;
@@ -372,7 +378,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding: 20px 0;
 	width: 345px;
 	background-color: #333;
-	margin-bottom: 1px;
+	border-bottom: 1px solid #f5f5f5;
 	color: #fff;
 	font-size: 20px;
 }
@@ -399,13 +405,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: #fff;
 	height: 3px;
 	width: 345px;
-	transition: width 3s ease-in;
+	transition-duration: 1s;
 }
 .inf span{
 	display: none;
 	text-transform: uppercase;
 	font-size: 14px;
 	padding: 15px ;
+	transition-duration: 1s;
 }
 .information p{
 	padding: 15px 0;
@@ -415,16 +422,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: #adadad;
 	text-transform: uppercase;
 }
-.basic:hover{
-	margin-top: -37px;
-}
+
 .basic:hover .inf{
 	height: 40px;
 }
 .basic:hover .inf span{
 	display: block;
 }
-.professional:hover{
+.animation{
+	transition-duration: 1s;
+}
+.animation:hover{
 	margin-top: -37px;
 }
 .professional:hover .inf{
@@ -432,9 +440,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .professional:hover .inf span{
 	display: block;
-}
-.enterprise:hover{
-	margin-top: -37px;
 }
 .enterprise:hover .inf{
 	height: 40px;
@@ -530,12 +535,7 @@ textarea{
 	justify-content: space-between;
 }
 
-/*
 
-.down{
-	padding-top: 50px;
-}
-*/
 .send_message button{
 	height: 45px;
 	margin-top: 15px;
